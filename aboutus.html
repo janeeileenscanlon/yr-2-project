@@ -2,96 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Bloom</title>
     <style>
       body {
-        background-color: #fdf6e3;
-        font-family: "Trebuchet MS", sans-serif;
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        line-height: 1.6;
-        color: #333;
+        background-color: #f8f9fa;
+        color: #000;
       }
 
-      h1,
-      h3 {
-        font-family: "Georgia", serif;
-        color: #2e8b57;
-        margin-top: 40px;
-        text-align: center;
-      }
-
-      p {
-        margin: 0 auto 20px;
-        width: 80%;
-        text-align: justify;
-      }
-
-      ul {
-        width: 80%;
-        margin: 0 auto 40px;
-        padding-left: 20px;
-        font-size: 18px;
-      }
-
+      /* --- Header --- */
       .HeadContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #ffffff;
-        padding: 10px 30px;
-        border-bottom: 3px solid #2e8b57;
+        background-color: white;
         position: sticky;
         top: 0;
-        z-index: 10;
-      }
-
-      .HeadContainer .logo {
+        width: 100%;
         height: 80px;
+        border: 5px solid #000000;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 7;
       }
 
-      .HeadContainer .title {
-        font-size: 40px;
-        color: #2e8b57;
-        margin-left: 20px;
+      .HeadContainer img.logo {
+        height: 70px;
+      }
+
+      h1.title {
+        font-size: 35px;
+        color: #d32f2f;
+        margin: 0;
       }
 
       .return {
-        margin-left: auto;
-        margin-right: 10px;
+        text-align: center;
+        background-color: #a37105;
+        border: 3px solid #000000;
       }
 
       button.button {
-        background-color: #2e8b57;
-        color: white;
         border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
         padding: 10px 20px;
-        font-size: 18px;
         cursor: pointer;
-        border-radius: 5px;
+        transition: 0.3s;
+        width: 100%;
       }
 
       button.button:hover {
-        background-color: #3cb371;
+        background-color: beige;
+        color: black;
       }
 
       header {
-        background-color: #faebd7;
-        padding: 10px 0;
+        background-color: #d32f2f;
+        color: white;
+        padding: 20px;
         text-align: center;
-        border-bottom: 2px solid #ccc;
       }
 
+      h2 {
+        color: #d32f2f;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      /* --- Content Box --- */
+      .textbox {
+        border: 2px solid #000;
+        padding: 20px;
+        background-color: #faebd7;
+        width: 80%;
+        margin: 20px auto;
+        font-size: larger;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+      }
+
+      /* --- How It Started --- */
       .howItStarted {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 80%;
         margin: 40px auto;
+        gap: 20px;
       }
 
       .howItStarted p {
-        width: 65%;
+        flex: 1;
       }
 
       .howItStarted img.blake {
@@ -99,7 +103,25 @@
         height: 180px;
         object-fit: cover;
         border-radius: 50%;
-        border: 4px solid #2e8b57;
+        border: 4px solid #d32f2f;
+      }
+
+      /* --- Services List --- */
+      ul.services {
+        width: 80%;
+        margin: 20px auto;
+        padding-left: 20px;
+        font-size: 18px;
+      }
+
+      /* --- Footer --- */
+      footer {
+        background-color: #d32f2f;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin-top: 30px;
       }
 
       hr {
@@ -108,30 +130,48 @@
         border: 0;
         border-top: 1px solid #ccc;
       }
+
+      @media (max-width: 700px) {
+        .howItStarted {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .howItStarted img.blake {
+          margin-top: 20px;
+        }
+
+        h1.title {
+          font-size: 28px;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <!-- Header -->
     <div class="HeadContainer">
-      <img class="logo" src="Pawslogo.png" alt="Bloom Logo" />
+      <img class="logo" src="bloomLogo.jpg" alt="Bloom Logo" />
       <h1 class="title">Bloom</h1>
+
       <div class="return">
-        <a href="Volunteer.html"><button class="button">Contact</button></a>
+        <a href="bouquets.html"><button class="button">Bouquets</button></a>
       </div>
       <div class="return">
-        <a href="in.html"><button class="button">Home</button></a>
+        <a href="contact.html"><button class="button">Volunteer</button></a>
       </div>
       <div class="return">
-        <a href="adopt.html"><button class="button">About Us</button></a>
+        <a href="aboutus.html"><button class="button">About Us</button></a>
       </div>
     </div>
 
+    <!-- Page Title -->
     <header>
       <h1>About Us</h1>
-      <hr />
     </header>
 
-    <h3>How It Started</h3>
+    <!-- How It Started -->
+    <h2>How It Started</h2>
     <div class="howItStarted">
       <p>
         Hello, my name is Lily Blossom Bloom and from a very young age I’ve
@@ -149,44 +189,57 @@
 
     <hr />
 
-    <h3>Founding Stages</h3>
-    <p>
-      Founded in 2023, Bloom Flower Shop is a small local business that focuses
-      on the ethical and sustainable production of beautiful bouquets and floral
-      arrangements for every event in life—from weddings and baby showers to
-      funerals. Bloom is the place to bring personality and color to your most
-      meaningful moments.
-    </p>
-
-    <p>
-      Our team is a diverse group of flower enthusiasts, united by our love for
-      our precious petal pals and our commitment to freshness and beauty. From
-      experienced arrangers and growers to our loyal customers and creative
-      collaborators, every person plays a role in making Bloom a place of joy,
-      care, and connection.
-    </p>
-
-    <hr />
-
-    <h3>Our Services</h3>
-    <ul>
-      <li>Weddings</li>
-      <li>Graduations</li>
-      <li>Baby Showers / Gender Reveals</li>
-      <li>Birthdays</li>
-      <li>House Warmings</li>
-      <li>Funerals & Memorial Services</li>
-      <li>Valentine’s Day</li>
-      <li>Mother’s Day</li>
-      <li>...and so much more</li>
-    </ul>
+    <!-- Founding Stages -->
+    <div class="textbox">
+      <h2>Founding Stages</h2>
+      <p>
+        Founded in 2023, Bloom Flower Shop is a small local business that
+        focuses on the ethical and sustainable production of beautiful bouquets
+        and floral arrangements for every event in life—from weddings and baby
+        showers to funerals. Bloom is the place to bring personality and color
+        to your most meaningful moments.
+      </p>
+      <p>
+        Our team is a diverse group of flower enthusiasts, united by our love
+        for our precious petal pals and our commitment to freshness and beauty.
+        From experienced arrangers and growers to our loyal customers and
+        creative collaborators, every person plays a role in making Bloom a
+        place of joy, care, and connection.
+      </p>
+    </div>
 
     <hr />
 
-    <p>
-      At Paws of Hope, each animal's journey is unique, and every adoption is a
-      celebration. Here are some of the heartwarming pictures of animals who
-      have found their forever homes through our shelter.
-    </p>
+    <!-- Services -->
+    <div class="textbox">
+      <h2>Our Services</h2>
+      <ul class="services">
+        <li>Weddings</li>
+        <li>Graduations</li>
+        <li>Baby Showers / Gender Reveals</li>
+        <li>Birthdays</li>
+        <li>House Warmings</li>
+        <li>Funerals & Memorial Services</li>
+        <li>Valentine’s Day</li>
+        <li>Mother’s Day</li>
+        <li>...and so much more</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- Closing Note -->
+    <div class="textbox">
+      <p>
+        At Blossom, each flower's journey is unique, and every bouquet is a
+        celebration. thank you for visiting out site and I hope you find exactly
+        what you are looking for 🌸.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Bloom Florist. All rights reserved.</p>
+    </footer>
   </body>
 </html>
