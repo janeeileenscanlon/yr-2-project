@@ -1,145 +1,192 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <title>Green Sprig</title>
-    <div class="HeadContainer">
-        <div style="height: auto; text-align: center;">
-        <img class = "logo" src="Pawslogo.png">
-        </div>
-        <div style="text-align: left;">
-        <h1 class = title> Green Sprig</h1>
+    <title></title>
+    <style>
+      body {
+        background-color: #fdf6e3;
+        font-family: "Trebuchet MS", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+      }
 
-        </div>
-        <div class="return">
-			<a href="Volunteer.html">
-            <button class="button">Contact</button>
-            </a>
-        </div>
-        <div class="return">
-			<a href="in.html">
-            <button class="button">Home</button>
-		    </a>
-        </div>
-        <div class="return">
-			<a href="adopt.html">
-            <button class="button">Bouquets</button>
-			</a>
-        </div>
-    </div>
-    
-    <header> <h1>About us</h1> 
-        <hr> </header>
+      h1,
+      h3 {
+        font-family: "Georgia", serif;
+        color: #2e8b57;
+        margin-top: 40px;
+        text-align: center;
+      }
 
-</head>
+      p {
+        margin: 0 auto 20px;
+        width: 80%;
+        text-align: justify;
+      }
 
-  
-    <body>
-    <h3>How it started</h3> 
-    <p>Hello, 
-		My name is Lily Blossom Bloom and from a very young age i have always had a passion for
-		flowers from a young age. Arranging bouquets for gifts on birthdays and annaversaried,
-		my close friends and family, then... I decided to move to thecity and open up very own flower shop
-		
-    </p>
-		<img src=""C:\Users\janee\OneDrive - University of Limerick\yr2College\classes\blake.jpeg"" alt="Description of image" width="300" height="200">
+      ul {
+        width: 80%;
+        margin: 0 auto 40px;
+        padding-left: 20px;
+        font-size: 18px;
+      }
 
-    <hr>
-            <H3>Founding stages</H3>
-    <p>Founded in 2023, Bloom flower shop is a small local business that focuses on the ethical and sustainable
-		production of beautiful bouquets and flower arrangments for every event in ones life, from weddings to ,
-		baby showers to funerals, Bloom flower shop is the place to get the personality and colour to any of your
-		major life events
-    </p>
-    <p>Our team is a diverse group of flower enthusiasts, 
-        united by our love for our so important petal pals and commitment to their fresh smell and look.
-         From our experienced arrangers and flower growth team to our loyal customers and board members, 
-         each team member plays a crucial role in making Bloom a place of hope and second chances. 
-    </p>
-<img src="aui.jpg" alt="A cute animal">
+      .HeadContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 10px 30px;
+        border-bottom: 3px solid #2e8b57;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
 
+      .HeadContainer .logo {
+        height: 80px;
+      }
 
-        <hr> <h3>Our Services</h3> 
-        <p>We offer a range of services to decorate and personalise whatever event you have in mind, including:
-           <li>Weddings</li> 
-			<li>Graduations</li>
-			<li>Baby showes/Gender Reveal</li>
-			<li>Birthdays</li>
-			<li>House Warming</li>
-        	<li>Funerals or Memorial services</li>
-			<li>Valintines day</li>
-			<li>Mothers day</li>
-			<li>  </li>
-			<li>...and so much more</li>
-		
-		</p>
-        <hr>
-        <p>At Paws of hope, each animal's journey is unique, and every adoption is a celebration. Here are some of the heartwarming pictures of animals who have found their forever homes through our shelter.</p>
-    </body>
-        <style>
-            header{
-                background-color: #faebd7;
-                padding: 1px 0;
-                text-align: center;
-            }
-           
-            body{
-                background-color: #efd09a;
-                margin:0;
-                padding: 0;
-            }
-p {
-    margin-bottom: 15px;
-    text-align: justify;
-}
+      .HeadContainer .title {
+        font-size: 40px;
+        color: #2e8b57;
+        margin-left: 20px;
+      }
 
-div.HeadContainer {background-color: #ffffff;
-      position: sticky;
-      top: 0;
-      width:100%;
-      margin:0;
-      height: 80px;
-      
-      z-index: 7;
-      border: 5px solid #000000;}
-    
-div.HeadContainer div{
-              width: 19%;
-              height: 95%;
-              float:left;
-              }
-    
-h1.title  {
-             font-size: 35px;
-    
-              }
-    
-img.logo   { height: 70px;}
-img.dog{
-    height: 100px;
-    border: 5px solid #000000;
-}
-    
-div.return{
-               text-align: center;
-                background-color: #f0fefe;
-                border: 5px solid #000000
-    }
-    
-button.button{
-                  border: 5px solid #000000;
-                  
-                  font-size: 25px;
-                  height: 100%;
-                  width: 100%;;
-                  transition-duration: 0.3s;
-                  
-    }
-    
-button.button:hover{
-                  background-color: beige;
-                  color:black
-                }
+      .return {
+        margin-left: auto;
+        margin-right: 10px;
+      }
+
+      button.button {
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button.button:hover {
+        background-color: #3cb371;
+      }
+
+      header {
+        background-color: #faebd7;
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .howItStarted {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 40px auto;
+      }
+
+      .howItStarted p {
+        width: 65%;
+      }
+
+      .howItStarted img.blake {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #2e8b57;
+      }
+
+      hr {
+        width: 80%;
+        margin: 40px auto;
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
     </style>
-    </html>
+  </head>
+
+  <body>
+    <div class="HeadContainer">
+      <img class="logo" src="Pawslogo.png" alt="Bloom Logo" />
+      <h1 class="title">Bloom</h1>
+      <div class="return">
+        <a href="Volunteer.html"><button class="button">Contact</button></a>
+      </div>
+      <div class="return">
+        <a href="in.html"><button class="button">Home</button></a>
+      </div>
+      <div class="return">
+        <a href="adopt.html"><button class="button">About Us</button></a>
+      </div>
+    </div>
+
+    <header>
+      <h1>About Us</h1>
+      <hr />
+    </header>
+
+    <h3>How It Started</h3>
+    <div class="howItStarted">
+      <p>
+        Hello, my name is Lily Blossom Bloom and from a very young age I’ve
+        always had a passion for flowers. Arranging bouquets for birthdays and
+        anniversaries for my close friends and family brought me joy.
+        Eventually, I decided to move to the city and open up my very own flower
+        shop.
+      </p>
+      <img
+        class="blake"
+        src="C:\Users\janee\OneDrive - University of Limerick\yr2College\classes\comp_net_multimedia\blake.jpeg"
+        alt="Lily Blossom Bloom"
+      />
+    </div>
+
+    <hr />
+
+    <h3>Founding Stages</h3>
+    <p>
+      Founded in 2023, Bloom Flower Shop is a small local business that focuses
+      on the ethical and sustainable production of beautiful bouquets and floral
+      arrangements for every event in life—from weddings and baby showers to
+      funerals. Bloom is the place to bring personality and color to your most
+      meaningful moments.
+    </p>
+
+    <p>
+      Our team is a diverse group of flower enthusiasts, united by our love for
+      our precious petal pals and our commitment to freshness and beauty. From
+      experienced arrangers and growers to our loyal customers and creative
+      collaborators, every person plays a role in making Bloom a place of joy,
+      care, and connection.
+    </p>
+
+    <hr />
+
+    <h3>Our Services</h3>
+    <ul>
+      <li>Weddings</li>
+      <li>Graduations</li>
+      <li>Baby Showers / Gender Reveals</li>
+      <li>Birthdays</li>
+      <li>House Warmings</li>
+      <li>Funerals & Memorial Services</li>
+      <li>Valentine’s Day</li>
+      <li>Mother’s Day</li>
+      <li>...and so much more</li>
+    </ul>
+
+    <hr />
+
+    <p>
+      At Paws of Hope, each animal's journey is unique, and every adoption is a
+      celebration. Here are some of the heartwarming pictures of animals who
+      have found their forever homes through our shelter.
+    </p>
+  </body>
+</html>

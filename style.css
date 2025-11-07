@@ -1,77 +1,82 @@
-body {background-color : #efd09a; margin:0; padding:0; }
+body {
+  background-color: #efd09a;
+  margin: 0;
+  padding: 0;
+}
 
+img.logo {
+  height: 125px;
+}
 
-img.logo{ height: 125px;}
+ {
+  border: 1px solid #555555;
+}
 
-{border: 1px solid #555555;}
-
-div.HeadContainer div{
-          width: 19%;
-          height: 95%;
-          float:left;
-          }
-h1.title  {
-         font-size: 55px;
-          font-family: "Trebuchet MS";
-
-          }
+div.HeadContainer div {
+  width: 19%;
+  height: 95%;
+  float: left;
+}
+h1.title {
+  font-size: 55px;
+  font-family: "Trebuchet MS";
+}
 h1.button {
-            font-size: 45px;
-
-          }
+  font-size: 45px;
+}
 
 div.box {
-        background-color: #f6fbfe;
-        display: grid;
-        height: 400px;
-        align-content: center;}
+  background-color: #f6fbfe;
+  display: grid;
+  height: 400px;
+  align-content: center;
+}
 
+img.header {
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
 
-img.header{
-          margin: auto ;
-          max-height: 100%;
-          max-width: 100%;}
-
-div.return{
-           text-align: center;
-            background-color: #f0fefe;
-            border: 4px solid cadetblue;
+div.return {
+  text-align: center;
+  background-color: #f0fefe;
+  border: 4px solid cadetblue;
 }
-div.article{
-
-            margin: auto;
-            width: 50%;
-            background-color: #faebd7;
-            height: fit-content;
-            font-family: "Trebuchet MS";
-            font-size: 23px;
-            padding-top: 50px;
+div.article {
+  margin: auto;
+  width: 50%;
+  background-color: #faebd7;
+  height: fit-content;
+  font-family: "Trebuchet MS";
+  font-size: 23px;
+  padding-top: 50px;
 }
-button.button{
-              background-color: rgba(0,0,0,0);
-              border: none;
-              font-size: 45px;
-              height: 100%;
-              width: 100%;
-              transition-duration: 0.3s;
+button.button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 45px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 0.3s;
 }
-button.button:hover{
-              background-color: #5f9ea0;
-              color: white;
+button.button:hover {
+  background-color: #5f9ea0;
+  color: white;
 }
-div.text{
-        margin: 0;
-        background-color: #f6fbfe;
-        position: relative;
-        top: 100px;
-        left: -25%;
-        z-index: 1;
-        height: fit-content;
-        width: 115%;
-        border: 2px solid #555555;
-        overflow: auto;
+div.text {
+  margin: 0;
+  background-color: #f6fbfe;
+  position: relative;
+  top: 100px;
+  left: -25%;
+  z-index: 1;
+  height: fit-content;
+  width: 115%;
+  border: 2px solid #555555;
+  overflow: auto;
 }
-div.text div{
+div.text div {
   float: left;
 }
 
@@ -87,23 +92,23 @@ div.text2 {
   border: 2px solid #555555;
   overflow: auto;
   padding-left: 5px;
-
-
 }
-div.text2 div{
+div.text2 div {
   float: right;
 }
-div.HeadContainer {background-color: #faebd7;
+div.HeadContainer {
+  background-color: #faebd7;
   position: sticky;
   top: 0;
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
   height: 150px;
   overflow: auto;
   z-index: 7;
-  border: 2px solid cadetblue;}
+  border: 2px solid cadetblue;
+}
 
-div.abdomen{
+div.abdomen {
   z-index: 1;
   width: 40%;
   font-size: larger;
@@ -132,7 +137,7 @@ div.text3 {
   overflow: auto;
 }
 
-div.text3 div{
+div.text3 div {
   float: left;
 }
 div.footer {
@@ -140,30 +145,19 @@ div.footer {
   height: 100px;
   color: white;
   overflow: auto;
-
 }
-div.footer div{
+div.footer div {
   float: left;
 }
-img.header{
+img.header {
   height: 400px;
 }
-div.Join{
-
+div.Join {
   background-color: #f6fbfe;
-
-
-
 
   width: 99.6%;
   height: fit-content;
   border: 2px solid #555555;
   overflow: auto;
   margin: auto;
-
 }
-
-
-
-
-
