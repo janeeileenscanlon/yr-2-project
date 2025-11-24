@@ -1,4 +1,11 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "bAnagher3555!";
+$dbname = "florist_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 // add_customer.php
 require_once 'functions.php';
 
@@ -61,3 +68,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </form>
 </body>
 </html>
+
