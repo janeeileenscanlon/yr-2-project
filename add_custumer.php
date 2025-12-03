@@ -32,6 +32,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 <h1>Add Customer</h1>
+    	<div class="HeadContainer">
+        <div style="height: auto; text-align: center;">
+        <img class = "logo" src="Pawslogo.png">
+        </div>
+        <div style="text-align: left;">
+        <h1 class = title> Bloom</h1>
+
+            <div class="return">
+        <a href="in.html">
+          <button class="button">Home</button>
+        </a>
+      </div>
+
+        </div>
+        <div class="return">
+			<a href="Volunteer.html">
+            <button class="button">Volunteer</button>
+            </a>
+        </div>
+        <div class="return">
+			<a href="adopt.html">
+            <button class="button">Adopt</button>
+		    </a>
+        </div>
+        <div class="return">
+			<a href="aboutus.html">
+            <button class="button">About Us</button>
+			</a>
+        </div>
+		<div class="return">
+        <a href="add_customer.php">
+          <button class="button">Add Costumer</button>
+        </a>
+      </div>
+      </div>
 
 <?php if ($message): ?>
     <p><strong><?= $message ?></strong></p>
@@ -62,5 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </form>
 </body>
 </html>
+
 
 
